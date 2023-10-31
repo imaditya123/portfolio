@@ -41,6 +41,20 @@
 
         }
 
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            text-decoration: none;
+            font-size: 1.02rem;
+            /* color: white; */
+
+        }
+
         .left {
             font-size: 1.5rem;
         }
@@ -49,13 +63,14 @@
 
             display: flex;
             justify-content: space-around;
-            margin: 80px 0;
+            align-items: center;
+            margin: 145px 0;
 
         }
 
         .leftSection {
             font-size: 2rem;
-            margin: 30px 0;
+            /* margin: 30px 0; */
         }
 
         .firstSection>div {
@@ -70,6 +85,46 @@
         .purple {
             color: rgb(153, 98, 205);
         }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(153, 98, 205);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(153, 98, 205);
+            height: 1px;
+            margin: 40px 84px
+        }
+
+        .secondSection .box {
+            Display: flex;
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
     </style>
 </head>
 
@@ -80,11 +135,11 @@
             <div class="left"> Aditya's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -92,14 +147,45 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My Name is <span class="purple">Aditya</span>
-                <div>And, I am a Software Engineer</div>
+                Hi, My Name is <span class="purple">Aditya Rathore</span>
+                <div>And, I am a <span id="element"></span>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="bg.png" alt="Background">
             </div>
         </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> what I have done so far</span>
+
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="developer.png" alt="developers image" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer 2010-2020
+                    </div>
+                    <div class="vertical-desc">
+                        Node.js
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+
+
+            </div>
+        </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Engineer.', 'Software Development Engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
 
 </html>
