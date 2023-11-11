@@ -4,278 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;600;700&family=Victor+Mono:wght@100&display=swap"
-        rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins';
-        }
+    <link rel="stylesheet" href="/css/small.css">
+    <link rel="stylesheet" href="/css/timeline.css">
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-        }
+    <link rel="stylesheet" href="/css/medium.css">
+    <link rel="stylesheet" href="/css/large.css">
+    <title>Aditya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbcdbcce5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 90px;
-            background-color: rgb(18, 18, 62);
-        }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-
-        }
-
-        nav ul li a:hover {
-            color: rgb(153, 153, 226);
-            text-decoration: none;
-            font-size: 1.02rem;
-            /* color: white; */
-
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 145px 0;
-
-        }
-
-        .leftSection {
-            font-size: 2rem;
-            /* margin: 30px 0; */
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .rightSection img {
-            width: 80%;
-            margin: 50px 0;
-        }
-
-        .purple {
-            color: rgb(153, 98, 205);
-        }
-
-        .text-gray {
-            color: grey;
-        }
-
-        #element {
-            color: rgb(153, 98, 205);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        main hr {
-            border: 0;
-            background: rgb(153, 98, 205);
-            height: 1px;
-            margin: 40px 84px
-        }
-
-        .secondSection .box {
-            Display: flex;
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-        }
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
-        }
-
-        .image-top {
-            position: relative;
-            width: 50px;
-            top: -50px;
-            left: -10px;
-            object-fit: fill;
-
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-
-        }
-
-        .vertical-firm {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 13px;
-            font-style: italic;
-        }
-
-        .vertical-subtitle {
-
-            position: relative;
-            top: 80px;
-            color: grey;
-            width: 150px;
-            font-size: 10px;
-        }
-
-        .vertical-duration {
-
-            position: relative;
-            top: 80px;
-            color: grey;
-            width: 150px;
-            font-size: 10px;
-        }
-
-        .vertical-desc {
-
-            position: relative;
-            top: 90px;
-            color: grey;
-            width: 150px;
-            font-size: 12px;
-            text-align: left;
-        }
-    </style>
 </head>
 
-<body>
-
+<body class="cursor-area">
+    <!-- <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
+        
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+      </div> -->
     <header>
         <nav>
-            <div class="left"> Aditya's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a class="underline-on-hover hoverable" href="#hello">Hello</a></li>
+                <li><a class="underline-on-hover hoverable" href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+
     </header>
+
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My Name is <span class="purple">Aditya Rathore</span>
-                <div>And, I am a <span id="element"></span>
+        <section id="profile-details">
+            <!-- <img src="/assets/images/img_bg_header.jpg" alt="backgroundImage"> -->
+
+            <div class="profile-image">
+                <img id="profile-image" src="/assets/images/img_bg_header.jpg" alt="profile">
+            </div>
+            <div class="personal-details">
+
+                <h1 class="title">Aditya Rathore_</h1>
+
+                <p class="under-title">Software Engineer, System operation engineer</p>
+
+                <div class="personal-detail-grid">
+                    <p class="label">AGE:</p>
+                    <p class="text">23yrs</p>
+                    <p class="label">PHONE:</p>
+                    <p class="text underline-on-hover hoverable">+91-9667841848</p>
+                    <p class="label">EMAIL:</p>
+                    <p class="text underline-on-hover hoverable">imadityarathore@gmail.com</p>
+                    <p class="label">ADDRESS:</p>
+                    <p class="text">Bengaluru, Karnataka (India)</p>
+                    <div class="row">
+                        <a class="hoverable" id="github" href="https://github.com/imaditya123/" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+
+                        <a class="hoverable" id="linkedin" href="https://www.linkedin.com/in/imadityarathore/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="bg.png" alt="Background">
-            </div>
+
         </section>
+
+        <section id="hello">
+            <h1 class=".title">Hi_</h1>
+            <p>I am an experienced Software Engineer and System Operation Engineer at Wells Fargo, specializing in Unix,
+                Sparx, and Python. In addition to my proficiency in these technologies, I have a comprehensive
+                understanding of full-stack development. My expertise extends from conceiving and structuring web
+                solutions to handling concepts, navigation, layout design, and programming, ensuring a seamless
+                integration of user experience (UX) and search engine optimization (SEO).
+                <br>
+                Known for my adeptness in crafting well-designed, testable, and efficient code, I consistently adhere to
+                the latest best practices in web development. As a fast learner, hard worker, and dedicated team player,
+                I bring a wealth of knowledge in an array of scripting languages and multimedia web tools to every
+                project.
+            </p>
+            <br>
+            <button class="button-52" role="button">Download CV</button>
+        </section>
+
         <hr>
-        <section class="secondSection">
-            <span class="text-gray"> what I have done so far</span>
 
-            <h1>Work Experience</h1>
+        <section id="resume">
+            <h1 class="title">Resume</h1>
+            <br>
+            <subsection>
+                <h3 class="under-title">Education</h3>
+                <!--  -->
 
-            <div class="box">
-                <div class="vertical">
-                    <img src="simplifii.jpeg" alt="developers image" class="image-top">
-                    <div class="vertical-title">
-                        Software developer Intern
+                <div class="timeline">
+                    <div class="entry">
+                        <div class="core">
+                            <div class="education">
+                                <h2 class="title">ABES Engineering College,Ghaziabad</h2>
+                                <p class="under-title">2018-2022</p>
+                                <p class="Content">Bachelor of Technology</p>
+                                <p class="subcontent">Computer science</p>
+                                <p class="subcontent"> CGPA:8 </p>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                    <div class="vertical-firm">
-                        @Simplifii labs Pvt. ltd
+
+                    <div class="entry">
+                        <div class="core">
+                            <div class="education">
+                                <h2 class="title">CRB Public School,Mainpuri</h2>
+                                <p class="under-title">2016-2017</p>
+                                <p class="Content">Intermediate</p>
+                                <p class="subcontent">Computer science</p>
+                                <p class="subcontent"> Percentage:78%</p>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                    <div class="vertical-duration">
-                        June,2020-May,2021
+
+                </div>
+
+                <!--  -->
+
+                <br><br>
+
+
+            </subsection>
+
+            <br>
+
+            <subsection class="employment">
+                <h3 class="under-title">Employment</h3>
+                <div class="timeline">
+                    <div class="entry">
+                        <div class="core">
+                            <div class="employement">
+                                <h2 class="title">Wells Fargo, Bengaluru</h2>
+                                <p class="under-title">Aug,2023-Present</p>
+                                <p class="Content">Program Associate/ System Operation Engineer</p>
+                                <p class="subcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Exercitationem quibusdam libero veritatis
+                                    omnis dolor rerum veniam quia aspernatur, eius quaerat consequatur nihil, fugit
+                                    placeat
+                                    recusandae
+                                    suscipit similique nemo dolore voluptatum.</p>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="vertical-desc">
-                        I initiated and led multiple mobile app projects using Flutter, React, and React Native,
-                        managing the entire project lifecycle and skillfully integrating third-party services to enhance
-                        functionality, achieving notable success.
+                    <div class="entry">
+                        <div class="core">
+                            <div class="employement">
+                                <h2 class="title">Nagarro, Noida</h2>
+                                <p class="under-title">Jan,2022 - Jul,2022</p>
+                                <p class="Content">PSDE-Intern</p>
+                                <p class="subcontent">Acquired proficiency in .NET technology, specifically in the C#
+                                    programming language.
+                                    Gained a solid understanding of the Model-View-Controller (MVC) architectural
+                                    pattern.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="core">
+                            <div class="employement">
+                                <h2 class="title">Simplifii labs Pvt Ltd, Delhi</h2>
+                                <p class="under-title">Jun,2020 - May,2021</p>
+                                <p class="Content">SDE-Intern</p>
+                                <p class="subcontent">Independently initiated and led various mobile application
+                                    development
+                                    projects from the ground up,
+                                    harnessing the power of Flutter, React, and React Native technologies.
+                                    Meticulously managed the full project lifecycle, from solitary inception through to
+                                    triumphant
+                                    deployment, while seamlessly integrating diverse third-party services to amplify
+                                    application
+                                    functionality.</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="nagarro.jpeg" alt="developers image" class="image-top">
-                    <div class="vertical-title">
-                        Software Engineer Intern
-                    </div>
-                    <div class="vertical-firm">
-                        @Nagarro
-                    </div>
-                    <div class="vertical-duration">
-                        Jan,2022-July,2022
-                    </div>
-                    <div class="vertical-desc">
-                        Attained expertise in .NET, particularly C# programming, and developed a strong grasp of the
-                        Model-View-Controller (MVC) architectural pattern.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img src="wells.png" alt="developers image" class="image-top">
-                    <div class="vertical-title">
-                        System Operation Engineer
-                    </div>
-                    <div class="vertical-firm">
-                        @Wells Fargo
-                    </div>
-                    <div class="vertical-duration">
-                        Aug,2022-Present
-                    </div>
-                    <div class="vertical-desc">
-                    Pending
-                    </div>
-                </div>
-                
 
+
+            </subsection>
+            <br><br>
+
+            <subsection class="skills">
+
+            </subsection>
+            <br><br>
+        </section>
+
+        <section id="projects">
+            <div class="tab">
+                <button class="tablinks" onclick="openProject(event, 'all')">All</button>
+                <button class="tablinks" onclick="openProject(event, 'frontend')">Front</button>
+                <button class="tablinks" onclick="openProject(event, 'backend')">Backend</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="all" class="tabcontent">
+                <h3>All projects</h3>
 
             </div>
+
+            <div id="frontend" class="tabcontent">
+                <h3>frontend</h3>
+
+            </div>
+
+            <div id="backend" class="tabcontent">
+                <h3>backend</h3>
+            </div>
+
+
         </section>
+
+
+
     </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Software Engineer.', 'Software Development Engineer.'],
-            typeSpeed: 50,
-        });
-    </script>
+
+
+
+
 
 </body>
+<script src="scripts/cursor-script.js"></script>
 
 </html>

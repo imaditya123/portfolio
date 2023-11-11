@@ -1,0 +1,32 @@
+@media screen and (min-width:1159px) {
+
+    header>nav>ul {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header>nav>ul>li:first-child {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+
+    #profile-details {
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #hello,
+    #resume,#projects {
+        margin: 40px 20%;
+
+    }
+
+    .entry:before,.core:before {
+        margin-left:18%;
+    }
+    .education ,.employment{
+        margin-left:20px
+    }
+
+    
+}
