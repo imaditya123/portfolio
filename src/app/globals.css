@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    scroll-behavior: smooth;
+}
+
+.shadow-radial {
+  background: radial-gradient(rgba(249, 139, 0, 0.4) 0%, rgba(249, 139, 0, 0.1) 50%);
+}
