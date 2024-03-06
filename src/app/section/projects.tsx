@@ -138,10 +138,10 @@ const Projects = () => {
                     >
                       {String(idx + 1).padStart(2, "0")}.
                     </h1>
-                    <div className="relative border shadow-md shadow-custom-yellow/10 rounded-md ">
+                    <div className="relative border shadow-md shadow-custom-yellow/10 rounded-md  h-60 w-full">
                     <Image
                       src={tabsData[activeTabIndex].projects[idx].image}
-                      alt=""
+                      alt="tabsData[activeTabIndex].projects[idx].title"
                       fill
                     />
                     </div>
