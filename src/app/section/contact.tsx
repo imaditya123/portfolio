@@ -5,6 +5,7 @@ const Contact = () => {
   const handleClick = () => {
     console.log("Button clicked!");
   };
+  const codeString="<>"
   return (
     <>
       <div id="contact" className=" flex flex-col sm:flex-row w-2/3 mx-auto">
@@ -17,7 +18,7 @@ const Contact = () => {
             />
             <h1 className="text-custom-yellow">CONTACT ME</h1>
           </div>
-          <h1 className="text-4xl mb-7">Let's have a talk?</h1>
+          <h1 className="text-4xl mb-7">Lets have a talk?</h1>
           <img
             src="/icons/propicon.svg"
             alt="contact card"
@@ -43,7 +44,7 @@ const Contact = () => {
           <div className="w-5 h-96 ">
             <div className="mx-auto min-h-[2em] h-48 w-px self-stretch bg-gradient-to-tr from-gray-800 via-gray-800 to-transparent opacity-70"></div>
           </div>
-          <h1 className="text-center w-5 mx-auto">&lt;&gt;</h1>
+          <h1 className="text-center w-5 mx-auto">{codeString}</h1>
           <div className="w-5 h-96 ">
             <div className="mx-auto min-h-[2em]  h-48 w-px self-stretch bg-gradient-to-tr from-transparent via-gray-800 to-gray-800 opacity-70"></div>
           </div>
