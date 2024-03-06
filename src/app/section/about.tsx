@@ -1,6 +1,6 @@
 import React from "react";
 import TimeLine from "../components/timeline";
-
+import Image from "next/image";
 const educationDetails = [
   {
     time: "2018-2022",
@@ -36,21 +36,18 @@ const About = () => {
   return (
     <>
       <div id="about" className="w-2/3 mx-auto my-10 flex flex-col">
-      <div className="flex flex-row mt-10 mb-5">
-        <img
-              src="/icons/employee_card.svg"
-              alt="employee card"
-              className="h-6 w-6 mr-2"
-            />
+        <div className="flex flex-row mt-10 mb-5">
+          <div className="relative h-6 w-6 mr-2">
+            <Image src="/icons/employee_card.svg" alt="employee card" fill />
+          </div>
           <h1 className="text-custom-yellow">Employement Details</h1>
         </div>
         <TimeLine keys={"Employement"} list={employmentDetails}></TimeLine>
-        <div className="flex flex-row mt-10 mb-5">
-        <img
-              src="/icons/education.svg"
-              alt=" card"
-              className="h-6 w-6 mr-2"
-            />
+        <div className="flex flex-row mt-10 mb-5 ">
+          <div className="relative h-6 w-6 mr-2">
+            <Image src="/icons/education.svg" alt=" card" fill />
+          </div>
+
           <h1 className="text-custom-yellow">Education Details</h1>
         </div>
 

@@ -1,29 +1,27 @@
 "use client";
 import React from "react";
 import AppButton from "../components/button";
+import Image from "next/image";
 const Contact = () => {
   const handleClick = () => {
     console.log("Button clicked!");
   };
-  const codeString="<>"
+  const codeString = "<>";
   return (
     <>
       <div id="contact" className=" flex flex-col sm:flex-row w-2/3 mx-auto">
         <div className="flex flex-col mx-5   my-auto sm:w-2/3 md:w-3/5">
           <div className="flex flex-row">
-            <img
-              src="/icons/contact_card.svg"
-              alt="contact card"
-              className=""
-            />
+            <div className="relative h-8 w-8 ">
+              <Image src="/icons/contact_card.svg" alt="contact card" fill />
+            </div>
             <h1 className="text-custom-yellow">CONTACT ME</h1>
           </div>
           <h1 className="text-4xl mb-7">Lets have a talk?</h1>
-          <img
-            src="/icons/propicon.svg"
-            alt="contact card"
-            className="w-full "
-          />
+          <div className="relative max-w-full h-5">
+            <Image src="/icons/propicon.svg" alt="contact card" fill />
+          </div>
+
           <input
             type="text"
             id="email"

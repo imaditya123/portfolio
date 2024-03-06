@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-
+import Image from "next/image";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -60,10 +60,15 @@ const Projects = () => {
     <>
       <div id="projects" className="mx-auto w-2/3 mb-10">
         <div className="flex flex-row">
-          <img src="/icons/project_icon.svg" alt="contact card" className="h-5 w-5 mr-2" />
+          <div className="relative h-5 w-5 mr-2">
+            <Image src="/icons/project_icon.svg" alt="contact card" fill/>
+          </div>
+
           <h1 className="text-custom-yellow">PROJECTS</h1>
         </div>
-        <p className="text-4xl mb-7 line-clamp-4">Bridging the Gap between imagination and execution</p>
+        <p className="text-4xl mb-7 line-clamp-4">
+          Bridging the Gap between imagination and execution
+        </p>
         <div className="relative">
           <div className="flex space-x-3 border-b">
             {tabsData.map((tab, idx) => {
@@ -98,11 +103,15 @@ const Projects = () => {
                   }
                 >
                   <div className="flex flex-col md:w-2/5">
-                    <img
+                    <div className="relative w-20 mb-4">
+                    <Image
                       src="/icons/orange_prop.svg"
                       alt="orange"
-                      className="w-20 mb-4"
+                      fill
+                      
                     />
+                    </div>
+                   
 
                     <h1 className="text-3xl mb-4">
                       {tabsData[activeTabIndex].projects[idx].title}
@@ -129,12 +138,14 @@ const Projects = () => {
                     >
                       {String(idx + 1).padStart(2, "0")}.
                     </h1>
-                    <div className=""></div>
-                    <img
+                    <div className="relative border shadow-md shadow-custom-yellow/10 rounded-md ">
+                    <Image
                       src={tabsData[activeTabIndex].projects[idx].image}
                       alt=""
-                      className="border shadow-md shadow-custom-yellow/10 rounded-md "
+                      fill
                     />
+                    </div>
+                   
                   </div>
                 </div>
               );
