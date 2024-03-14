@@ -1,28 +1,20 @@
-// /** @type {import('next').NextConfig} */
 
-// const nextConfig = {
-//     output: "export",
-//     reactStrictMode: true,
-//     skipTrailingSlashRedirect: true,
 
-//     // basePath: '/github-pages',
-//     // purge: ['./pages/**/*.{js,ts,jsx,tsx}',
-//     // './components/**/*.{js,ts,jsx,tsx}',
-//     // './src/components/**/*.{js,ts,jsx,tsx}',
-//     // './src/section/**/*.{js,ts,jsx,tsx}',
-
-// // ],
-// };
-
-// export default nextConfig;
-
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
     output: 'export',
-    distDir: 'dist',
-    images: {
-    unoptimized: true,
-  },
-};
-/* module.exports = nextConfig*/
-export default nextConfig;
+   
+    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+    // trailingSlash: true,
+   
+    // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+    // skipTrailingSlashRedirect: true,
+   
+    // Optional: Change the output directory `out` -> `dist`
+    // distDir: 'dist',
+  }
+   
+  module.exports = nextConfig
+  
