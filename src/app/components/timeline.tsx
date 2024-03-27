@@ -1,5 +1,6 @@
 import { list } from "postcss";
 import React from "react";
+import "../globals.css";
 
 const TimeLine = ({ list, keys }: { list: Array<any>; keys: String }) => {
   return (

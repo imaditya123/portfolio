@@ -10,6 +10,8 @@ import {
 import BannerButton from "../components/banner";
 import AppButton from "../components/button";
 
+import "../globals.css";
+
 const tabsData = [
   {
     label: "All Projects",

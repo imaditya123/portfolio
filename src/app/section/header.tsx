@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import "../globals.css";
 
 const Header = () => {
     return (

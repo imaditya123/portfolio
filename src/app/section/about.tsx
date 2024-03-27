@@ -1,6 +1,8 @@
 import React from "react";
 import TimeLine from "../components/timeline";
 import Image from "next/image";
+import "../globals.css";
+
 const educationDetails = [
   {
     time: "2018-2022",
