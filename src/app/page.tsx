@@ -3,7 +3,6 @@ import About from "./section/about";
 import Contact from "./section/contact";
 import Header from "./section/header";
 import Projects from "./section/projects";
-import "./globals.css";
 
 export default function Home() {
   return (

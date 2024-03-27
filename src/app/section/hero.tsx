@@ -2,8 +2,6 @@
 import React from "react";
 import AppButton from "../components/button";
 import Image from "next/image";
-import "../globals.css";
-
 const Hero = () => {
   return (
     <>
