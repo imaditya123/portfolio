@@ -32,22 +32,7 @@ const Hero = () => {
             >
               Say Hello
             </AppButton>
-
-            <div className="max-h-full w-64 flex flex-row  content-center pl-14 py-24 m-auto">
-              <div className="relative h-6 w-6 my-2 transform hover:h-8 hover:w-8 mx-1">
-                <Image src="/icons/hugging_face.svg" alt="hugging face" fill />
-              </div>
-              <div className="relative h-6 w-6 my-2 transform hover:h-8 hover:w-8 mx-1">
-                <Image src="/icons/github.svg" alt="github" fill />
-              </div>
-              <div className="relative h-6 w-6 my-2 transform hover:h-8 hover:w-8 mx-1">
-    
-                <Image src="/icons/twitter.svg" alt="twitter" fill />
-              </div>
-              <div className="relative h-6 w-6 my-2 transform hover:h-8 hover:w-8 mx-1">
-                <Image src="/icons/linkedin.svg" alt="linked in" fill />
-              </div>
-            </div>
+              
           </div>
         </div>
       </div>
