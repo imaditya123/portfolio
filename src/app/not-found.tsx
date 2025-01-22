@@ -1,6 +1,5 @@
 "use-client";
 import Link from "next/link";
-import Header from "./section/header";
 
 export default function NotFound() {
   return (
