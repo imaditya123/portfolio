@@ -1,17 +1,13 @@
-import Hero from "./section/hero";
-import About from "./section/about";
-import Contact from "./section/contact";
-import Header from "./section/header";
-import Projects from "./section/projects";
-// new imports
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import { TimelineCard } from "@/components/timeline-card";
+import { RainbowButton } from "@/components/button";
 import Markdown from "react-markdown";
-import Image from "next/image";
-
+import { Badge } from "@/components/ui/badge";
+import { ProjectCard } from "@/components/project-card";
+import Link from "next/link";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
@@ -53,8 +49,8 @@ export default function Home() {
         </BlurFade>
       </section>
 
-      <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+      <section id="work-experience">
+        <div className="space-y-12 w-full py-10">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2 ">
@@ -88,7 +84,7 @@ export default function Home() {
       </section>
 
       <section id="education">
-        <div className="space-y-10 w-full py-5">
+        <div className="space-y-5 w-full py-5">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2 ">
@@ -112,7 +108,7 @@ export default function Home() {
                     subtitle={education.degree}
                     // description={education.description}
                     dates={`${education.start} ${
-                      education.start == '' ? "" : "-"
+                      education.start == "" ? "" : "-"
                     } ${education.end}`}
                     image={education.logoUrl}
                     description={""}
@@ -124,41 +120,86 @@ export default function Home() {
           </BlurFade>
         </div>
       </section>
-
-      {/* <section id="educations">
+      <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2 ">
+                {/* <Image src="/icons/employee_card.svg" alt="employee card" fill /> */}
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Skills
+                </h2>
+              </div>
+            </div>
           </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <TimelineCard
-                key={education.school}
-
-                title={education.school}
-                subtitle={education.degree}
-                    // description={education.description}
-                 
-                    dates={`${education.start} - ${education.end}`}
-                    image={education.logoUrl}
-
-               
-                // altText={education.school}
-             
-              />
-            </BlurFade>
-          ))}
+          <div className="flex flex-wrap gap-1">
+            {DATA.skills.map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
         </div>
-      </section> */}
-      {/* <Header /> */}
+      </section>
 
-      {/* <Projects></Projects> */}
-      <Contact></Contact>
-
-      {/* <Hero /> */}
+      <section id="projects">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2 ">
+                {/* <Image src="/icons/employee_card.svg" alt="employee card" fill /> */}
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Projects
+                </h2>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {DATA.projects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <RainbowButton href={"/projects"}>View Projects</RainbowButton></BlurFade>
+        </div>
+      </section>
+      <section id="contact">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-3">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Get in Touch
+              </h2>
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Want to chat? Just shoot me a dm{" "}
+                <Link
+                  href={DATA.contact.social.X.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  with a direct question on twitter
+                </Link>{" "}
+                and I&apos;ll respond whenever I can. I will ignore all
+                soliciting.
+              </p>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
     </main>
   );
 }

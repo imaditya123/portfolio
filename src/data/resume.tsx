@@ -5,13 +5,27 @@ export const DATA = {
   name: "Aditya Rathore",
   initials: "AR",
   url: "https://www.imaditya.info/",
-  avatarUrl:"",
+  avatarUrl: "",
   //   email: "imadityarathore@gmail.com",
-  description:"Software Engineer with a passion for building innovative solutions and helping others. I love creating, learning, and sharing ideas.",
+  description:
+    "Software Engineer with a passion for building innovative solutions and helping others. I love creating, learning, and sharing ideas.",
   designation: "Software Engineer",
   blog_url: "https://medium.com/@imadityarathore",
   summary:
     "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter, AWS, and more—I love building things, learning new technologies, and sharing ideas.",
+  skills: [
+    "React",
+    "Next.js",
+    "Typescript",
+    "Node.js",
+    "Python",
+    "Go",
+    "Postgres",
+    "Docker",
+    "Kubernetes",
+    "Java",
+    "C++",
+  ],
   contact: {
     email: "imadityarathore@gmail.com",
     tel: "+91-9667841848",
@@ -61,7 +75,11 @@ export const DATA = {
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "https://medium.com/@imadityarathore",
+      icon: NotebookIcon,
+      label: "Blog",
+    },
   ],
   work: [
     {
@@ -120,27 +138,19 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Version Information Tracker (VIT)",
+      href: "https://github.com/imaditya123/VIT",
+      dates: "Jan 2025",
       active: true,
+      category: ["ML Projects", "All Projects","Python Projects",],
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "VIT (Version Information Tracker) is a simple command-line version control system inspired by Git. It allows users to initialize repositories, add files to staging, commit changes, manage branches, and view diffs, all through a terminal interface.",
+      technologies: ["Python"],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/VIT",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
@@ -148,4 +158,11 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
   ],
-}as const;
+
+  project_category: [
+    "All Projects",
+    "ML Projects",
+    "App Development",
+    "Python Projects",
+  ],
+} as const;

@@ -1,21 +1,38 @@
-'use client'
-import React, { ReactNode } from "react";
+import React from "react";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+interface RainbowButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  href: string;
+}
 
-
-const AppButton = ({onTap,children}: {
-  onTap: any;
-  children: ReactNode;
-}) => {
+export const RainbowButton = React.forwardRef<
+  HTMLButtonElement,
+  RainbowButtonProps
+>(({ children, className, href, ...props }, ref) => {
   return (
     <button
-      onClick={onTap}
-      className="border-2 border-black px-5 py-1  hover:-translate-y-px
-shadow-[rgba(0,0,0,1)_-2px_2px_1px_0px]
-  hover:shadow-[rgba(0,0,0,1)_-5px_5px_1px_0px] transition
-"
+      ref={ref}
+      className={cn(
+        "transition-colors group relative inline-flex h-9 animate-rainbow cursor-pointer items-center justify-center rounded-xl border-0 bg-[length:200%] px-8 py-2 font-medium text-primary-foreground transition-colors [background-clip:padding-box,border-box,border-box] [background-origin:border-box] [border:calc(0.08*1rem)_solid_transparent] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+        // before styles
+        "before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:[filter:blur(calc(0.8*1rem))]",
+        // light mode colors
+        "bg-[linear-gradient(#121213,#121213),linear-gradient(#121213_50%,rgba(18,18,19,0.6)_80%,rgba(18,18,19,0)),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))]",
+        // dark mode colors
+        "dark:bg-[linear-gradient(#fff,#fff),linear-gradient(#fff_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))]",
+        className
+      )}
+      {...props}
     >
-      {children}
+      <Link
+        href={href || "#"}
+        className={cn("block cursor-pointer", className)}
+      >
+        {children}
+      </Link>
     </button>
   );
-};
-export default AppButton;
+});
+
+RainbowButton.displayName = "RainbowButton";
