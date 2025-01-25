@@ -12,19 +12,22 @@ export const DATA = {
   designation: "Software Engineer",
   blog_url: "https://medium.com/@imadityarathore",
   summary:
-    "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter, AWS, and more—I love building things, learning new technologies, and sharing ideas.",
+    "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter,and more—I love building things, learning new technologies, and sharing ideas.",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
     "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
     "Java",
     "C++",
+    "C#",
+    "Typescript",
+    "Flutter",
+    "Pytorch",
+    "Numpy",
+    "Pandas",
+    "tensorflow",
+    "Node.js",
+    "React",
+    "Next.js",
+    "Docker",
   ],
   contact: {
     email: "imadityarathore@gmail.com",
@@ -89,7 +92,7 @@ export const DATA = {
       location: "Bangalore",
       title: "System Operation Engineer",
       logoUrl: "/images/wellsfargo.svg",
-      start: "Aug 2023",
+      start: "Aug 2022",
       end: "Present",
       description: "",
     },
@@ -157,6 +160,25 @@ export const DATA = {
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
+    {
+      title: "Palingram Finder",
+      href: "https://github.com/imaditya123/palingram-finder",
+      dates: "Jan 2025",
+      active: true,
+      category: ["Python Projects", "All Projects", "Algorithm Projects"],
+      description:
+        "Palingram Finder is a Python-based program that identifies two-word palingrams. It efficiently analyzes words to find combinations that form palindromes, showcasing algorithms and string manipulation techniques.",
+      technologies: ["Python"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/palingram-finder",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/palingram.png",
+      video: ""
+    }
   ],
 
   project_category: [
