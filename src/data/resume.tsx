@@ -15,10 +15,13 @@ export const DATA = {
     "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter,and more—I love building things, learning new technologies, and sharing ideas.",
   skills: [
     "Python",
+    "SQL",
     "Java",
     "C++",
     "C#",
+    "Javascript",
     "Typescript",
+    "Git",
     "Flutter",
     "Pytorch",
     "Numpy",
@@ -145,7 +148,8 @@ export const DATA = {
       href: "https://github.com/imaditya123/VIT",
       dates: "Jan 2025",
       active: true,
-      category: ["ML Projects", "All Projects","Python Projects",],
+      favorite:true,
+      category: ["All Projects", "Python Projects"],
       description:
         "VIT (Version Information Tracker) is a simple command-line version control system inspired by Git. It allows users to initialize repositories, add files to staging, commit changes, manage branches, and view diffs, all through a terminal interface.",
       technologies: ["Python"],
@@ -165,6 +169,7 @@ export const DATA = {
       href: "https://github.com/imaditya123/palingram-finder",
       dates: "Jan 2025",
       active: true,
+      favorite:false,
       category: ["Python Projects", "All Projects", "Algorithm Projects"],
       description:
         "Palingram Finder is a Python-based program that identifies two-word palingrams. It efficiently analyzes words to find combinations that form palindromes, showcasing algorithms and string manipulation techniques.",
@@ -173,12 +178,32 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/palingram-finder",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/palingram.png",
-      video: ""
-    }
+      video: "",
+    },
+    {
+      title: "Silly Name Generator",
+      href: "https://github.com/imaditya123/Silly-Name-Ganerator",
+      dates: "Jan 2025",
+      active: true,
+      favorite:false,
+      category: ["Python Projects", "Fun Projects", "All Projects"],
+      description:
+        "Silly Name Generator is a Python-based CLI application that creates random, humorous names. It combines wordplay and randomness to generate entertaining results, perfect for creative use or just for fun.",
+      technologies: ["Python"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/Silly-Name-Ganerator",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/silly_name.png",
+      video: "",
+    },
   ],
 
   project_category: [

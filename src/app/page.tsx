@@ -155,7 +155,7 @@ export default function Home() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {DATA.projects.filter(project => project.favorite).map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -175,7 +175,7 @@ export default function Home() {
             ))}
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-          <RainbowButton href={"/projects"}>View Projects</RainbowButton></BlurFade>
+          <RainbowButton href={"/projects"}>View All Projects</RainbowButton></BlurFade>
         </div>
       </section>
       <section id="contact">
