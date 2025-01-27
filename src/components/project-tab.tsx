@@ -42,7 +42,11 @@ export function ProjectTabs({
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-        {filteredProjects.map((project, id) => (
+        {filteredProjects.sort((a, b) => {
+                const dateA = new Date(a.dates).getTime();
+                const dateB = new Date(b.dates).getTime();
+                return dateB - dateA; // Sort by descending date
+              }).map((project, id) => (
           <BlurFade
             key={project.title}
             delay={BLUR_FADE_DELAY * 12 + id * 0.05}

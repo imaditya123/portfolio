@@ -97,7 +97,8 @@ export const DATA = {
       logoUrl: "/images/wellsfargo.svg",
       start: "Aug 2022",
       end: "Present",
-      description: "",
+      description:
+        "Automated server configuration with Ansible reducing deployment time by 40%, enhanced monitoring efficiency by 35% using Python, optimized Unix server uptime by resolving performance bottlenecks, and earned recognition for presenting automation improvements.",
     },
     {
       company: "Nagarro",
@@ -146,9 +147,9 @@ export const DATA = {
     {
       title: "Version Information Tracker (VIT)",
       href: "https://github.com/imaditya123/VIT",
-      dates: "Jan 2025",
+      dates: "Dec 2024",
       active: true,
-      favorite:true,
+      favorite: true,
       category: ["All Projects", "Python Projects"],
       description:
         "VIT (Version Information Tracker) is a simple command-line version control system inspired by Git. It allows users to initialize repositories, add files to staging, commit changes, manage branches, and view diffs, all through a terminal interface.",
@@ -167,9 +168,9 @@ export const DATA = {
     {
       title: "Palingram Finder",
       href: "https://github.com/imaditya123/palingram-finder",
-      dates: "Jan 2025",
+      dates: "Aug 2024",
       active: true,
-      favorite:false,
+      favorite: false,
       category: ["Python Projects", "All Projects", "Algorithm Projects"],
       description:
         "Palingram Finder is a Python-based program that identifies two-word palingrams. It efficiently analyzes words to find combinations that form palindromes, showcasing algorithms and string manipulation techniques.",
@@ -187,9 +188,9 @@ export const DATA = {
     {
       title: "Silly Name Generator",
       href: "https://github.com/imaditya123/Silly-Name-Ganerator",
-      dates: "Jan 2025",
+      dates: "Aug 2024",
       active: true,
-      favorite:false,
+      favorite: false,
       category: ["Python Projects", "Fun Projects", "All Projects"],
       description:
         "Silly Name Generator is a Python-based CLI application that creates random, humorous names. It combines wordplay and randomness to generate entertaining results, perfect for creative use or just for fun.",
@@ -202,6 +203,26 @@ export const DATA = {
         },
       ],
       image: "/images/silly_name.png",
+      video: "",
+    },
+    {
+      title: "Tensor Grad",
+      href: "https://github.com/imaditya123/tensor_grad",
+      dates: "Jan 2025",
+      active: true,
+      favorite: true,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "Tensor Grad is a lightweight Python library for automatic differentiation. Inspired by frameworks like PyTorch and TensorFlow, it allows users to compute gradients for machine learning models efficiently and intuitively.",
+      technologies: ["Python", "Machine Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/tensor_grad",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/tensor_grad.png",
       video: "",
     },
   ],
