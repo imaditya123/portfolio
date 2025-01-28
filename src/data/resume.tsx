@@ -225,6 +225,46 @@ export const DATA = {
       image: "/images/tensor_grad.png",
       video: "",
     },
+    {
+      title: "Unique ID Generator",
+      href: "https://github.com/imaditya123/Unique-Id-Generate",
+      dates: "Jan 2023",
+      active: true,
+      favorite: false,
+      category: ["Utility Projects", "All Projects", "Java Projects"],
+      description:
+        "Unique ID Generator is a Java-based utility tool designed to generate unique identifiers for a variety of use cases. Built with scalability and performance in mind, it ensures collision-free IDs, making it ideal for distributed systems, database keys, session tokens, and more.",
+      technologies: ["Java"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/Unique-Id-Generate",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/unique_id_generator.png",
+      video: ""
+    },
+    {
+      title: "SafeChannel",
+      href: "https://github.com/imaditya123/safechannel",
+      dates: "Mar 2023",
+      active: true,
+      favorite: false,
+      category: ["Security Projects", "All Projects", "Java Projects"],
+      description:
+        "SafeChannel is a secure communication framework built in Java. It ensures end-to-end encryption, protecting sensitive information during transmission. Designed for scalability and robustness, it is ideal for applications requiring secure data transfer, such as messaging platforms and financial systems.",
+      technologies: ["Java", "Encryption", "Security"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/safechannel",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/safechannel.webp",
+      video: ""
+    }
   ],
 
   project_category: [
