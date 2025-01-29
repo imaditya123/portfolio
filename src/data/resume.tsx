@@ -264,6 +264,26 @@ export const DATA = {
       ],
       image: "/images/safechannel.webp",
       video: ""
+    },
+    {
+      title: "URL Shortener",
+      href: "https://github.com/imaditya123/urlshortner",
+      dates: "May 2023",
+      active: true,
+      favorite: false,
+      category: ["Web Projects", "All Projects", "Java Projects"],
+      description:
+        "URL Shortener is a Java-based web application that converts long URLs into short, shareable links. It features efficient hashing, database storage, and analytics to track link usage, making it ideal for personal and enterprise use.",
+      technologies: ["Java", "Spring Boot", "REST API", "Database"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/urlshortner",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/url_shortner.webp",
+      video: ""
     }
   ],
 
@@ -272,5 +292,6 @@ export const DATA = {
     "ML Projects",
     "App Development",
     "Python Projects",
+ 
   ],
 } as const;
