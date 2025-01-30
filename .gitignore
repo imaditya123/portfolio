@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-/src/app/resume/page.tsx
 # testing
 /coverage
 
