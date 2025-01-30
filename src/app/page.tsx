@@ -75,6 +75,8 @@ export default function Home() {
                     subtitle={work.title}
                     dates={`${work.start} - ${work.end ?? "Present"}`}
                     image={work.logoUrl}
+                    link={work.href}
+
                   />
                 </BlurFade>
               ))}
@@ -112,6 +114,7 @@ export default function Home() {
                     } ${education.end}`}
                     image={education.logoUrl}
                     description={""}
+                    link={education.href}
                     // altText={education.school}
                   />
                 </BlurFade>
