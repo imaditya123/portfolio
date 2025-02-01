@@ -284,6 +284,25 @@ export const DATA = {
       ],
       image: "/images/url_shortner.webp",
       video: ""
+    },
+    {
+      title: "To-Do App",
+      href: "https://github.com/imaditya123/todoApp",
+      dates: "July 2023",
+      active: true,
+      category: ["Mobile Apps", "All Projects", "Flutter Projects","App Development",],
+      description:
+        "To-Do App is a Flutter-based task management application that enables users to create, organize, and track tasks seamlessly. Built with a clean UI, it supports features like task prioritization, reminders, and cross-platform functionality for both Android and iOS.",
+      technologies: ["Flutter", "Dart", ],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/todoApp",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/todoapp.webp",
+      video: ""
     }
   ],
 
