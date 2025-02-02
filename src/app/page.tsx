@@ -48,6 +48,9 @@ export default function Home() {
           </Markdown>
         </BlurFade>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <RainbowButton href={"/resume.pdf"} >View Resume</RainbowButton>
+          </BlurFade>
 
       <section id="work-experience">
         <div className="space-y-12 w-full py-10">

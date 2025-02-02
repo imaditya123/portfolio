@@ -1,4 +1,6 @@
 import { Badge } from "@/components/ui/badge";
+import { useTheme } from "next-themes";
+
 import {
   Card,
   CardContent,
@@ -10,6 +12,8 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { MagicCard } from "@/components/magicui/magic-card";
+
 
 interface Props {
   title: string;
@@ -41,6 +45,7 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
+
     <Card
       className={
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
