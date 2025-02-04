@@ -17,6 +17,7 @@ export const DATA = {
     "Python",
     "SQL",
     "Java",
+    "Dart",
     "C++",
     "C#",
     "Javascript",
@@ -304,7 +305,28 @@ export const DATA = {
       ],
       image: "/images/todoapp.webp",
       video: ""
+    },
+    {
+      title: "Generative Adversarial Network (GAN)",
+      href: "https://github.com/imaditya123/GAN",
+      dates: "July 2024",
+      active: true,
+      favorite: false,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "A Generative Adversarial Network (GAN) implemented in Python using TensorFlow/PyTorch. This project focuses on training a generator and a discriminator to create realistic synthetic data, such as images or text.",
+      technologies: ["Python", "PyTorch", "Deep Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/GAN",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/GAN.png",
+      video: ""
     }
+    
   ],
 
   project_category: [
