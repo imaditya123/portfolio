@@ -334,6 +334,7 @@ export const DATA = {
     "ML Projects",
     "App Development",
     "Python Projects",
+  
  
   ],
 } as const;
