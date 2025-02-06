@@ -30,7 +30,7 @@ export default async function ResumePage() {
             height={600} // Desired height in pixels
           />
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <RainbowButton href={"/resume.pdf"} target="_blank" >Download Resume</RainbowButton>
           </BlurFade>
       </div>
