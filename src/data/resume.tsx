@@ -12,19 +12,26 @@ export const DATA = {
   designation: "Software Engineer",
   blog_url: "https://medium.com/@imadityarathore",
   summary:
-    "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter, AWS, and more—I love building things, learning new technologies, and sharing ideas.",
+    "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter,and more—I love building things, learning new technologies, and sharing ideas.",
   skills: [
+    "Python",
+    "SQL",
+    "Java",
+    "Dart",
+    "C++",
+    "C#",
+    "Javascript",
+    "Typescript",
+    "Git",
+    "Flutter",
+    "Pytorch",
+    "Numpy",
+    "Pandas",
+    "tensorflow",
+    "Node.js",
     "React",
     "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
     "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
   ],
   contact: {
     email: "imadityarathore@gmail.com",
@@ -89,9 +96,10 @@ export const DATA = {
       location: "Bangalore",
       title: "System Operation Engineer",
       logoUrl: "/images/wellsfargo.svg",
-      start: "Aug 2023",
+      start: "Aug 2022",
       end: "Present",
-      description: "",
+      description:
+        "Automated server configuration with Ansible reducing deployment time by 40%, enhanced monitoring efficiency by 35% using Python, optimized Unix server uptime by resolving performance bottlenecks, and earned recognition for presenting automation improvements.",
     },
     {
       company: "Nagarro",
@@ -140,9 +148,10 @@ export const DATA = {
     {
       title: "Version Information Tracker (VIT)",
       href: "https://github.com/imaditya123/VIT",
-      dates: "Jan 2025",
+      dates: "Dec 2024",
       active: true,
-      category: ["ML Projects", "All Projects","Python Projects",],
+      favorite: true,
+      category: ["All Projects", "Python Projects"],
       description:
         "VIT (Version Information Tracker) is a simple command-line version control system inspired by Git. It allows users to initialize repositories, add files to staging, commit changes, manage branches, and view diffs, all through a terminal interface.",
       technologies: ["Python"],
@@ -153,10 +162,171 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/images/vit.webp",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
+    {
+      title: "Palingram Finder",
+      href: "https://github.com/imaditya123/palingram-finder",
+      dates: "Aug 2024",
+      active: true,
+      favorite: false,
+      category: ["Python Projects", "All Projects", "Algorithm Projects"],
+      description:
+        "Palingram Finder is a Python-based program that identifies two-word palingrams. It efficiently analyzes words to find combinations that form palindromes, showcasing algorithms and string manipulation techniques.",
+      technologies: ["Python"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/palingram-finder",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/palingram.png",
+      video: "",
+    },
+    {
+      title: "Silly Name Generator",
+      href: "https://github.com/imaditya123/Silly-Name-Ganerator",
+      dates: "Aug 2024",
+      active: true,
+      favorite: false,
+      category: ["Python Projects", "Fun Projects", "All Projects"],
+      description:
+        "Silly Name Generator is a Python-based CLI application that creates random, humorous names. It combines wordplay and randomness to generate entertaining results, perfect for creative use or just for fun.",
+      technologies: ["Python"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/Silly-Name-Ganerator",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/silly_name.png",
+      video: "",
+    },
+    {
+      title: "Tensor Grad",
+      href: "https://github.com/imaditya123/tensor_grad",
+      dates: "Jan 2025",
+      active: true,
+      favorite: true,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "Tensor Grad is a lightweight Python library for automatic differentiation. Inspired by frameworks like PyTorch and TensorFlow, it allows users to compute gradients for machine learning models efficiently and intuitively.",
+      technologies: ["Python", "Machine Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/tensor_grad",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/tensor_grad.png",
+      video: "",
+    },
+    {
+      title: "Unique ID Generator",
+      href: "https://github.com/imaditya123/Unique-Id-Generate",
+      dates: "Jan 2023",
+      active: true,
+      favorite: false,
+      category: ["Utility Projects", "All Projects", "Java Projects"],
+      description:
+        "Unique ID Generator is a Java-based utility tool designed to generate unique identifiers for a variety of use cases. Built with scalability and performance in mind, it ensures collision-free IDs, making it ideal for distributed systems, database keys, session tokens, and more.",
+      technologies: ["Java"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/Unique-Id-Generate",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/unique_id_generator.png",
+      video: ""
+    },
+    {
+      title: "SafeChannel",
+      href: "https://github.com/imaditya123/safechannel",
+      dates: "Mar 2023",
+      active: true,
+      favorite: false,
+      category: ["Security Projects", "All Projects", "Java Projects"],
+      description:
+        "SafeChannel is a secure communication framework built in Java. It ensures end-to-end encryption, protecting sensitive information during transmission. Designed for scalability and robustness, it is ideal for applications requiring secure data transfer, such as messaging platforms and financial systems.",
+      technologies: ["Java", "Encryption", "Security"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/safechannel",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/safechannel.webp",
+      video: ""
+    },
+    {
+      title: "URL Shortener",
+      href: "https://github.com/imaditya123/urlshortner",
+      dates: "May 2023",
+      active: true,
+      favorite: false,
+      category: ["Web Projects", "All Projects", "Java Projects"],
+      description:
+        "URL Shortener is a Java-based web application that converts long URLs into short, shareable links. It features efficient hashing, database storage, and analytics to track link usage, making it ideal for personal and enterprise use.",
+      technologies: ["Java", "Spring Boot", "REST API", "Database"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/urlshortner",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/url_shortner.webp",
+      video: ""
+    },
+    {
+      title: "To-Do App",
+      href: "https://github.com/imaditya123/todoApp",
+      dates: "July 2023",
+      active: true,
+      favorite: false,
+      category: ["Mobile Apps", "All Projects", "Flutter Projects","App Development",],
+      description:
+        "To-Do App is a Flutter-based task management application that enables users to create, organize, and track tasks seamlessly. Built with a clean UI, it supports features like task prioritization, reminders, and cross-platform functionality for both Android and iOS.",
+      technologies: ["Flutter", "Dart", ],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/todoApp",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/todoapp.webp",
+      video: ""
+    },
+    {
+      title: "Generative Adversarial Network (GAN)",
+      href: "https://github.com/imaditya123/GAN",
+      dates: "July 2024",
+      active: true,
+      favorite: false,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "A Generative Adversarial Network (GAN) implemented in Python using TensorFlow/PyTorch. This project focuses on training a generator and a discriminator to create realistic synthetic data, such as images or text.",
+      technologies: ["Python", "PyTorch", "Deep Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/GAN",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "/images/GAN.png",
+      video: ""
+    }
+    
   ],
 
   project_category: [
@@ -164,5 +334,7 @@ export const DATA = {
     "ML Projects",
     "App Development",
     "Python Projects",
+  
+ 
   ],
 } as const;

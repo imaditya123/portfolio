@@ -1,13 +1,13 @@
 "use-client";
 import Link from "next/link";
-
+import { RainbowButton } from "@/components/button";
 export default function NotFound() {
   return (
-    <div className="h-screen bg-[radial-gradient(30%_30%_at_20%_70%,rgba(251,191,36,0.3)_0%,rgba(255,255,255,0.00)_100%)] px-auto">
-      <div className="block items-center max-h-full max-w-full mx-auto">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <div className="block items-center max-h-full max-w-full mx-auto space-y-2">
         <h2>Not Found</h2>
         <p>Could not find requested resource</p>
-        <Link href="/">Return Home</Link>
+        <RainbowButton href={"/"}>Return Home</RainbowButton>
       </div>
     </div>
   );

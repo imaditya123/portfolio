@@ -5,7 +5,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
-
+import { motion } from "framer-motion";
 interface ProjectTabsProps  {
   // projects: readonly ProjectProps[];
   categories: readonly string[];
@@ -24,25 +24,53 @@ export function ProjectTabs({
   );
   return (
     <div className="space-y-6">
+           {/* <BlurFade
+          // key={category}
+          delay={BLUR_FADE_DELAY * 12 }
+        > */}
       <div className="flex items-center space-x-4">
-        {categories.map((category) => (
+      
+        {categories.map((category,id) => (
+     
           <button
             key={category}
-            className={cn(
-              "px-4 py-2 text-sm font-medium rounded-md border",
-              activeCategory === category
-                ? "bg-primary text-primary-foreground border-primary"
-                : "bg-background text-muted-foreground border-border hover:bg-muted"
-            )}
+            className={`${
+              activeCategory === category ? "" : " "
+            } relative rounded-full px-3 py-1.5 text-sm font-medium outline-sky-400 transition focus-visible:outline-2`}
+           
+
+            // className={cn(
+            //   "px-4 py-2 text-sm font-medium rounded-md border",
+            //   activeCategory === category
+            //     ? "bg-primary text-primary-foreground border-primary"
+            //     : "bg-background text-muted-foreground border-border hover:bg-muted"
+            // )}
             onClick={() => setActiveCategory(category)}
           >
+            {activeCategory === category && (
+            <motion.span
+              layoutId="bubble"
+              className="absolute inset-0 z-10 bg-white mix-blend-difference "
+              style={{ borderRadius: 9999 }}
+              transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+            />
+          )}
+
             {category}
           </button>
+          // </BlurFade>
         ))}
+        
       </div>
+      {/* </BlurFade> */}
+      
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-        {filteredProjects.map((project, id) => (
+        {filteredProjects.sort((a, b) => {
+                const dateA = new Date(a.dates).getTime();
+                const dateB = new Date(b.dates).getTime();
+                return dateB - dateA; // Sort by descending date
+              }).map((project, id) => (
           <BlurFade
             key={project.title}
             delay={BLUR_FADE_DELAY * 12 + id * 0.05}

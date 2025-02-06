@@ -48,6 +48,9 @@ export default function Home() {
           </Markdown>
         </BlurFade>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <RainbowButton href={"/resume"} >View Resume</RainbowButton>
+          </BlurFade>
 
       <section id="work-experience">
         <div className="space-y-12 w-full py-10">
@@ -75,6 +78,8 @@ export default function Home() {
                     subtitle={work.title}
                     dates={`${work.start} - ${work.end ?? "Present"}`}
                     image={work.logoUrl}
+                    link={work.href}
+
                   />
                 </BlurFade>
               ))}
@@ -112,6 +117,7 @@ export default function Home() {
                     } ${education.end}`}
                     image={education.logoUrl}
                     description={""}
+                    link={education.href}
                     // altText={education.school}
                   />
                 </BlurFade>
@@ -155,27 +161,35 @@ export default function Home() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
+            {DATA.projects
+              .filter((project) => project.favorite)
+              .sort((a, b) => {
+                const dateA = new Date(a.dates).getTime();
+                const dateB = new Date(b.dates).getTime();
+                return dateB - dateA; // Sort by descending date
+              })
+              .map((project, id) => (
+                <BlurFade
                   key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    image={project.image}
+                    video={project.video}
+                    links={project.links}
+                  />
+                </BlurFade>
+              ))}
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-          <RainbowButton href={"/projects"}>View Projects</RainbowButton></BlurFade>
+            <RainbowButton href={"/projects"}>View All Projects</RainbowButton>
+          </BlurFade>
         </div>
       </section>
       <section id="contact">
