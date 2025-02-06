@@ -4,12 +4,13 @@ import Link from "next/link";
 interface RainbowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href: string;
+  target?:string
 }
 
 export const RainbowButton = React.forwardRef<
   HTMLButtonElement,
   RainbowButtonProps
->(({ children, className, href, ...props }, ref) => {
+>(({ children, className, href,target, ...props }, ref) => {
   return (
     <button
       ref={ref}
@@ -28,6 +29,7 @@ export const RainbowButton = React.forwardRef<
       <Link
         href={href || "#"}
         className={cn("block cursor-pointer", className)}
+        target={target}
       >
         {children}
       </Link>

@@ -49,7 +49,7 @@ export default function Home() {
         </BlurFade>
       </section>
       <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <RainbowButton href={"/resume.pdf"} >View Resume</RainbowButton>
+            <RainbowButton href={"/resume"} >View Resume</RainbowButton>
           </BlurFade>
 
       <section id="work-experience">
