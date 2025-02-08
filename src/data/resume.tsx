@@ -146,6 +146,46 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "T-Translate",
+      href: "https://github.com/imaditya123/T-translate",
+      dates: "Jan 2025",
+      active: true,
+      favorite: true,
+      category: ["Machine Learning", "All Projects", "Python Projects"],
+      description:
+        "T-Translate is a Transformer-based text generation model built from scratch using PyTorch. It follows the original Attention Is All You Need paper, implementing a custom Transformer architecture for text-to-text tasks such as machine translation or text completion.",
+      technologies: ["Python", "NLP", "Deep Learning", "Transformers"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/T-translate",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/t-translate.webp",
+      video: "",
+    },
+    {
+      title: "Tensor Grad",
+      href: "https://github.com/imaditya123/tensor_grad",
+      dates: "Jan 2025",
+      active: true,
+      favorite: true,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "Tensor Grad is a lightweight Python library for automatic differentiation. Inspired by frameworks like PyTorch and TensorFlow, it allows users to compute gradients for machine learning models efficiently and intuitively.",
+      technologies: ["Python", "Machine Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/tensor_grad",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/tensor_grad.png",
+      video: "",
+    },
+    {
       title: "Version Information Tracker (VIT)",
       href: "https://github.com/imaditya123/VIT",
       dates: "Dec 2024",
@@ -163,13 +203,12 @@ export const DATA = {
         },
       ],
       image: "/images/vit.webp",
-      video:
-        "",
+      video: "",
     },
     {
       title: "Palingram Finder",
       href: "https://github.com/imaditya123/palingram-finder",
-      dates: "Aug 2024",
+      dates: "Sep 2024",
       active: true,
       favorite: false,
       category: ["Python Projects", "All Projects", "Algorithm Projects"],
@@ -206,26 +245,7 @@ export const DATA = {
       image: "/images/silly_name.png",
       video: "",
     },
-    {
-      title: "Tensor Grad",
-      href: "https://github.com/imaditya123/tensor_grad",
-      dates: "Jan 2025",
-      active: true,
-      favorite: true,
-      category: ["ML Projects", "All Projects", "Python Projects"],
-      description:
-        "Tensor Grad is a lightweight Python library for automatic differentiation. Inspired by frameworks like PyTorch and TensorFlow, it allows users to compute gradients for machine learning models efficiently and intuitively.",
-      technologies: ["Python", "Machine Learning"],
-      links: [
-        {
-          type: "Git Repo",
-          href: "https://github.com/imaditya123/tensor_grad",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/tensor_grad.png",
-      video: "",
-    },
+
     {
       title: "Unique ID Generator",
       href: "https://github.com/imaditya123/Unique-Id-Generate",
@@ -240,11 +260,11 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/Unique-Id-Generate",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/unique_id_generator.png",
-      video: ""
+      video: "",
     },
     {
       title: "SafeChannel",
@@ -260,11 +280,11 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/safechannel",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/safechannel.webp",
-      video: ""
+      video: "",
     },
     {
       title: "URL Shortener",
@@ -280,11 +300,11 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/urlshortner",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/url_shortner.webp",
-      video: ""
+      video: "",
     },
     {
       title: "To-Do App",
@@ -292,19 +312,24 @@ export const DATA = {
       dates: "July 2023",
       active: true,
       favorite: false,
-      category: ["Mobile Apps", "All Projects", "Flutter Projects","App Development",],
+      category: [
+        "Mobile Apps",
+        "All Projects",
+        "Flutter Projects",
+        "App Development",
+      ],
       description:
         "To-Do App is a Flutter-based task management application that enables users to create, organize, and track tasks seamlessly. Built with a clean UI, it supports features like task prioritization, reminders, and cross-platform functionality for both Android and iOS.",
-      technologies: ["Flutter", "Dart", ],
+      technologies: ["Flutter", "Dart"],
       links: [
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/todoApp",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/todoapp.webp",
-      video: ""
+      video: "",
     },
     {
       title: "Generative Adversarial Network (GAN)",
@@ -320,13 +345,12 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/GAN",
-          icon: <Icons.github className='size-3' />
-        }
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/images/GAN.png",
-      video: ""
-    }
-    
+      video: "",
+    },
   ],
 
   project_category: [
@@ -334,7 +358,5 @@ export const DATA = {
     "ML Projects",
     "App Development",
     "Python Projects",
-  
- 
   ],
 } as const;
