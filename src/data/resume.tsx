@@ -206,6 +206,26 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Generative Adversarial Network (GAN)",
+      href: "https://github.com/imaditya123/GAN",
+      dates: "July 2024",
+      active: true,
+      favorite: false,
+      category: ["ML Projects", "All Projects", "Python Projects"],
+      description:
+        "A Generative Adversarial Network (GAN) implemented in Python using TensorFlow/PyTorch. This project focuses on training a generator and a discriminator to create realistic synthetic data, such as images or text.",
+      technologies: ["Python", "PyTorch", "Deep Learning"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/GAN",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/GAN.png",
+      video: "",
+    },
+    {
       title: "Palingram Finder",
       href: "https://github.com/imaditya123/palingram-finder",
       dates: "Sep 2024",
@@ -245,67 +265,6 @@ export const DATA = {
       image: "/images/silly_name.png",
       video: "",
     },
-
-    {
-      title: "Unique ID Generator",
-      href: "https://github.com/imaditya123/Unique-Id-Generate",
-      dates: "Jan 2023",
-      active: true,
-      favorite: false,
-      category: ["Utility Projects", "All Projects", "Java Projects"],
-      description:
-        "Unique ID Generator is a Java-based utility tool designed to generate unique identifiers for a variety of use cases. Built with scalability and performance in mind, it ensures collision-free IDs, making it ideal for distributed systems, database keys, session tokens, and more.",
-      technologies: ["Java"],
-      links: [
-        {
-          type: "Git Repo",
-          href: "https://github.com/imaditya123/Unique-Id-Generate",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/unique_id_generator.png",
-      video: "",
-    },
-    {
-      title: "SafeChannel",
-      href: "https://github.com/imaditya123/safechannel",
-      dates: "Mar 2023",
-      active: true,
-      favorite: false,
-      category: ["Security Projects", "All Projects", "Java Projects"],
-      description:
-        "SafeChannel is a secure communication framework built in Java. It ensures end-to-end encryption, protecting sensitive information during transmission. Designed for scalability and robustness, it is ideal for applications requiring secure data transfer, such as messaging platforms and financial systems.",
-      technologies: ["Java", "Encryption", "Security"],
-      links: [
-        {
-          type: "Git Repo",
-          href: "https://github.com/imaditya123/safechannel",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/safechannel.webp",
-      video: "",
-    },
-    {
-      title: "URL Shortener",
-      href: "https://github.com/imaditya123/urlshortner",
-      dates: "May 2023",
-      active: true,
-      favorite: false,
-      category: ["Web Projects", "All Projects", "Java Projects"],
-      description:
-        "URL Shortener is a Java-based web application that converts long URLs into short, shareable links. It features efficient hashing, database storage, and analytics to track link usage, making it ideal for personal and enterprise use.",
-      technologies: ["Java", "Spring Boot", "REST API", "Database"],
-      links: [
-        {
-          type: "Git Repo",
-          href: "https://github.com/imaditya123/urlshortner",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/url_shortner.webp",
-      video: "",
-    },
     {
       title: "To-Do App",
       href: "https://github.com/imaditya123/todoApp",
@@ -332,23 +291,63 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Generative Adversarial Network (GAN)",
-      href: "https://github.com/imaditya123/GAN",
-      dates: "July 2024",
+      title: "URL Shortener",
+      href: "https://github.com/imaditya123/urlshortner",
+      dates: "May 2023",
       active: true,
       favorite: false,
-      category: ["ML Projects", "All Projects", "Python Projects"],
+      category: ["Web Projects", "All Projects", "Java Projects"],
       description:
-        "A Generative Adversarial Network (GAN) implemented in Python using TensorFlow/PyTorch. This project focuses on training a generator and a discriminator to create realistic synthetic data, such as images or text.",
-      technologies: ["Python", "PyTorch", "Deep Learning"],
+        "URL Shortener is a Java-based web application that converts long URLs into short, shareable links. It features efficient hashing, database storage, and analytics to track link usage, making it ideal for personal and enterprise use.",
+      technologies: ["Java", "Spring Boot", "REST API", "Database"],
       links: [
         {
           type: "Git Repo",
-          href: "https://github.com/imaditya123/GAN",
+          href: "https://github.com/imaditya123/urlshortner",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/images/GAN.png",
+      image: "/images/url_shortner.webp",
+      video: "",
+    },
+    {
+      title: "SafeChannel",
+      href: "https://github.com/imaditya123/safechannel",
+      dates: "Mar 2023",
+      active: true,
+      favorite: false,
+      category: ["Security Projects", "All Projects", "Java Projects"],
+      description:
+        "SafeChannel is a secure communication framework built in Java. It ensures end-to-end encryption, protecting sensitive information during transmission. Designed for scalability and robustness, it is ideal for applications requiring secure data transfer, such as messaging platforms and financial systems.",
+      technologies: ["Java", "Encryption", "Security"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/safechannel",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/safechannel.webp",
+      video: "",
+    },
+    {
+      title: "Unique ID Generator",
+      href: "https://github.com/imaditya123/Unique-Id-Generate",
+      dates: "Jan 2023",
+      active: true,
+      favorite: false,
+      category: ["Utility Projects", "All Projects", "Java Projects"],
+      description:
+        "Unique ID Generator is a Java-based utility tool designed to generate unique identifiers for a variety of use cases. Built with scalability and performance in mind, it ensures collision-free IDs, making it ideal for distributed systems, database keys, session tokens, and more.",
+      technologies: ["Java"],
+      links: [
+        {
+          type: "Git Repo",
+          href: "https://github.com/imaditya123/Unique-Id-Generate",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/unique_id_generator.png",
       video: "",
     },
   ],
