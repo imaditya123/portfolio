@@ -1,4 +1,3 @@
-// "use client";
 import Image from "next/image";
 import BlurFade from "@/components/magicui/blur-fade";
 import { RainbowButton } from "@/components/button";
@@ -23,7 +22,7 @@ export default async function ResumePage() {
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <Image
+          <Image  className="dark:invert border-2 border-solid"
             src="/resume.jpg" // Path relative to the public folder
             alt="Resume Image"
             width={800} // Desired width in pixels
