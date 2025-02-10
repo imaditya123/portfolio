@@ -1,7 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { DATA } from "@/data/resume";
-import { ProjectCard } from "@/components/project-card";
 import { ProjectTabs } from "@/components/project-tab";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 export const metadata = {
   title: "Projects",
@@ -13,6 +13,8 @@ const BLUR_FADE_DELAY = 0.04;
 export default async function BlogPage() {
   return (
     <section id="projects">
+      <ScrollProgress className="top" />
+
       <div className="space-y-12 w-full py-0">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 ">

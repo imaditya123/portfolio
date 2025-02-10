@@ -8,11 +8,17 @@ import Markdown from "react-markdown";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/project-card";
 import Link from "next/link";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import { Meteors } from "@/components/magicui/meteor-ui";
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
   return (
+ 
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <ScrollProgress className="top" />
+     
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -49,8 +55,8 @@ export default function Home() {
         </BlurFade>
       </section>
       <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <RainbowButton href={"/resume"} >View Resume</RainbowButton>
-          </BlurFade>
+        <RainbowButton href={"/resume"}>View Resume</RainbowButton>
+      </BlurFade>
 
       <section id="work-experience">
         <div className="space-y-12 w-full py-10">
@@ -79,7 +85,6 @@ export default function Home() {
                     dates={`${work.start} - ${work.end ?? "Present"}`}
                     image={work.logoUrl}
                     link={work.href}
-
                   />
                 </BlurFade>
               ))}
