@@ -120,8 +120,8 @@ export const DATA = {
       location: "Delhi",
       title: "SDE Intern",
       logoUrl: "/images/simplifii.jpeg",
-      start: "January 2020",
-      end: "April 2020",
+      start: "June 2020",
+      end: "May 2021",
       description:
         "Spearheaded mobile app development projects using Flutter, React, and React Native, managing the entire lifecycle from concept to deployment and integrating third-party services to enhance functionality",
     },

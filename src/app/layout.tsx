@@ -6,8 +6,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
-const inter = Inter({ subsets: ["latin"], });
-
 const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -61,6 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+       
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
@@ -70,6 +69,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
           {/* <Particles> */}
+          
           {children}
           {/* </Particles> */}
             
