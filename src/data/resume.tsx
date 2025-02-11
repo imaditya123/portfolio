@@ -41,28 +41,28 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/imaditya123",
         icon: Icons.github,
-
+        new_tab:true,
         navbar: true,
       },
       HuggingFace: {
         name: "HuggingFace",
         url: "https://huggingface.co/imaditya123",
         icon: Icons.HuggingFaceIcon,
-
+        new_tab:true,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/imadityarathore",
         icon: Icons.linkedin,
-
+        new_tab:true,
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/imaditya123",
         icon: Icons.x,
-
+        new_tab:true,
         navbar: true,
       },
       //   Youtube: {
@@ -73,10 +73,10 @@ export const DATA = {
       //   },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:imadityarathore@gmail.com?subject=Hi%20There&message=Hi%20There",
         icon: Icons.email,
-
-        navbar: false,
+        new_tab:true,
+        navbar: true,
       },
     },
   },
