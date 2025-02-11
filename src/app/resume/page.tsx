@@ -12,6 +12,7 @@ export default async function ResumePage() {
   return (
     <section id="projects">
       <div className="space-y-12 w-full py-0">
+        
         <BlurFade delay={BLUR_FADE_DELAY * 1}>
           <div className="flex flex-col items-center justify-center space-y-4 ">
             <div className="space-y-2 ">
@@ -21,6 +22,9 @@ export default async function ResumePage() {
             </div>
           </div>
         </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 2}>
+            <RainbowButton href={"/resume.pdf"} target="_blank" >Download Resume</RainbowButton>
+          </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <Image  className="dark:invert border-2 border-solid"
             src="/resume.jpg" // Path relative to the public folder
@@ -29,9 +33,7 @@ export default async function ResumePage() {
             height={600} // Desired height in pixels
           />
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <RainbowButton href={"/resume.pdf"} target="_blank" >Download Resume</RainbowButton>
-          </BlurFade>
+       
       </div>
     </section>
   );
