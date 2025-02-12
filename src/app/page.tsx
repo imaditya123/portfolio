@@ -9,16 +9,18 @@ import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/project-card";
 import Link from "next/link";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import { Meteors } from "@/components/magicui/meteor-ui";
+import { WorkTimeline } from "@/components/work-timeline";
+import { EducationTimeline } from "@/components/edu-timeline";
+
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
-  return (
  
+  return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <ScrollProgress className="top" />
-     
+
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -57,7 +59,6 @@ export default function Home() {
       <BlurFade delay={BLUR_FADE_DELAY * 5}>
         <RainbowButton href={"/resume"}>View Resume</RainbowButton>
       </BlurFade>
-
       <section id="work-experience">
         <div className="space-y-12 w-full py-10">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -71,7 +72,9 @@ export default function Home() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+          <WorkTimeline/>
+            {/* <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+           
               {DATA.work.map((work, id) => (
                 <BlurFade
                   key={work.company}
@@ -88,7 +91,7 @@ export default function Home() {
                   />
                 </BlurFade>
               ))}
-            </ul>
+            </ul> */}
           </BlurFade>
         </div>
       </section>
@@ -106,7 +109,8 @@ export default function Home() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+          <EducationTimeline />
+            {/* <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.education.map((education, id) => (
                 <BlurFade
                   key={education.school}
@@ -127,7 +131,7 @@ export default function Home() {
                   />
                 </BlurFade>
               ))}
-            </ul>
+            </ul> */}
           </BlurFade>
         </div>
       </section>

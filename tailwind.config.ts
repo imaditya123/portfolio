@@ -75,8 +75,22 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
+        shake:'shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97)',
+        progress: 'progress 20s infinite forwards',
+      },
       
       keyframes: {
+        progress: {
+          '0%': { transform: 'scaleY(0)', borderColor: '#ff0000' }, // start scaled down with red
+          '33%': { borderColor: '#00ff00' },                        // change to green
+          '66%': { borderColor: '#0000ff' },                        // then blue
+          '100%': { transform: 'scaleY(1)', borderColor: '#ff0000' }  // fully scaled (fills container) with red
+        },
+
         shake: {
           '0%': {
               transform: 'translate3d(0, 0, 0)'
@@ -93,12 +107,11 @@ const config: Config = {
           '100%': {
               transform: 'translate3d(0, 0, 0)'
           }
-      }
-      ,      
-        rainbow: {
-          "0%": { "background-position": "0%" },
-          "100%": { "background-position": "200%" },
-        },
+      },      
+      rainbow: {
+        "0%": { "background-position": "0%" },
+        "100%": { "background-position": "300%" },
+      },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -109,12 +122,7 @@ const config: Config = {
         },
         
       },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        rainbow: "rainbow var(--speed, 2s) infinite linear",
-        shake:'shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97)',
-      },
+
 
 
     },
