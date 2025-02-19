@@ -20,6 +20,8 @@ export const DATA = {
     "Dart",
     "C++",
     "C#",
+    "Hugging Face",
+    "RAG",
     "Javascript",
     "Typescript",
     "Git",
@@ -144,6 +146,35 @@ export const DATA = {
       end: "2017",
     },
   ],
+  certificates: [
+    {
+      logoUrl: "",
+      altText: "G",
+      subtitle: "",
+      description: "",
+      title: "Google Cloud Digital Leader",
+      href: "https://www.credential.net/1db83ee2-fd4c-4579-a4c2-408980f671c0#acc.ACIF3Qml",
+      period: "",
+    },
+    {
+      logoUrl: "",
+      altText: "DL",
+      subtitle: "",
+      description: "",
+      period: "",
+      title: "Advanced Retrieval for AI with Chroma",
+      href: "https://learn.deeplearning.ai/accomplishments/86f40f7a-b871-4cf1-9a7a-37308c98e4cb?usp=sharing",
+    },
+    {
+      logoUrl: "",
+      altText: "C",
+      subtitle: "",
+      description: "",
+      period: "",
+      title: "Applied Data Science with Python",
+      href: "https://coursera.org/share/7caca3640de1d058f6a4744a89329567",
+    },
+  ],
   projects: [
     {
       title: "Vision Transformer",
@@ -165,7 +196,7 @@ export const DATA = {
         {
           type: "Git Repo",
           href: "https://github.com/imaditya123/Vision-transformer",
-          icon: <Icons.github className='size-3' />,
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/images/vision-t.webp",
