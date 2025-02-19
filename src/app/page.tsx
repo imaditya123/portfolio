@@ -11,12 +11,12 @@ import Link from "next/link";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { WorkTimeline } from "@/components/work-timeline";
 import { EducationTimeline } from "@/components/edu-timeline";
-
+import { CertificateCard } from "@/components/certificate_card";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
- 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <ScrollProgress className="top" />
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-          <WorkTimeline/>
+            <WorkTimeline />
             {/* <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
            
               {DATA.work.map((work, id) => (
@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-          <EducationTimeline />
+            <EducationTimeline />
             {/* <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.education.map((education, id) => (
                 <BlurFade
@@ -200,6 +200,39 @@ export default function Home() {
             <RainbowButton href={"/projects"}>View All Projects</RainbowButton>
           </BlurFade>
         </div>
+      </section>
+      <section id="certificate">
+        <div className="flex min-h-0 flex-col gap-y-3 ">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-1">
+              <div className="space-y-2 ">
+                {/* <Image src="/icons/employee_card.svg" alt="employee card" fill /> */}
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Certificates
+                </h2>
+              </div>
+            </div>
+          </BlurFade>
+          {DATA.certificates.map((certificate, id) => (
+            <BlurFade 
+              key={certificate.title}
+              delay={BLUR_FADE_DELAY * 13 + id * 0.05}
+            >
+              
+              <CertificateCard
+                key={certificate.title}
+                logoUrl={certificate.logoUrl}
+                altText={certificate.altText}
+                title={certificate.title}
+                subtitle={certificate.subtitle}
+                href={certificate.href}
+                period={`${certificate.period ?? "Present"}`}
+                description={certificate.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+        
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
