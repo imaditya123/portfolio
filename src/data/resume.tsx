@@ -96,7 +96,7 @@ export const DATA = {
       href: "https://www.wellsfargo.com/",
       badges: [],
       location: "Bangalore",
-      title: "System Operation Engineer",
+      title: "Software Engineer",
       logoUrl: "/images/wellsfargo.svg",
       start: "Aug 2022",
       end: "Present",
