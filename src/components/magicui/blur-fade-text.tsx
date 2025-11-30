@@ -32,6 +32,11 @@ const BlurFadeText = ({
   };
   const combinedVariants = variant || defaultVariants;
   const characters = useMemo(() => Array.from(text), [text]);
+  const transitionBase = {
+    repeat: Infinity,
+    repeatType: "reverse" as const,
+    ease: "easeOut",
+  };
 
   if (animateByCharacter) {
     return (
@@ -45,7 +50,8 @@ const BlurFadeText = ({
               exit="hidden"
               variants={combinedVariants}
               transition={{
-                yoyo: Infinity,
+              repeat: Infinity,
+              repeatType: "reverse",
                 delay: delay + i * characterDelay,
                 ease: "easeOut",
               }}
@@ -69,7 +75,8 @@ const BlurFadeText = ({
           exit="hidden"
           variants={combinedVariants}
           transition={{
-            yoyo: Infinity,
+            repeat: Infinity,
+            repeatType: "reverse",
             delay,
             ease: "easeOut",
           }}
