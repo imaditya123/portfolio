@@ -108,7 +108,7 @@ export const DATA = {
       badges: [],
       href: "https://www.nagarro.com/",
       location: "Noida",
-      title: "SDE Intern",
+      title: "Associate Software Engineer",
       logoUrl: "/images/nagarro.png",
       start: "January 2022",
       end: "July 2022",
