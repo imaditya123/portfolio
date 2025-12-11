@@ -12,7 +12,7 @@ export const DATA = {
   designation: "Software Engineer",
   blog_url: "https://medium.com/@imadityarathore",
   summary:
-    "I’m a software engineer passionate about Flutter and machine learning. With a diverse toolkit—Python, JavaScript, Flutter,and more—I love building things, learning new technologies, and sharing ideas.",
+    "I’m a developer who loves turning ideas into reliable, well-engineered applications. My work spans Python, Java, Spring Boot, React, and AWS, with a strong focus on writing clean, efficient code and building systems that scale. I enjoy solving complex problems, improving performance, and learning new technologies that help me grow as an engineer. When I’m not coding, I’m exploring ways to stay curious and keep building.",
   skills: [
     "Python",
     "SQL",
@@ -101,8 +101,7 @@ export const DATA = {
       start: "Aug 2022",
       end: "Present",
       description:
-        "Automated server configuration with Ansible reducing deployment time by 40%, enhanced monitoring efficiency by 35% using Python, optimized Unix server uptime by resolving performance bottlenecks, and earned recognition for presenting automation improvements.",
-    },
+        "Developed enterprise-grade full-stack features using Spring Boot and React, optimizing REST microservices to cut response times by 20% and boost throughput by 15%. Built Kafka-based pipelines that improved reliability by 20% and reduced production incidents by 15% through effective debugging and RCA. Automated CI/CD workflows to reduce deployment time by 25% and improved overall code quality—cutting regressions by 10%—while working within Agile/Scrum processes."    },
     {
       company: "Nagarro",
       badges: [],
@@ -113,8 +112,7 @@ export const DATA = {
       start: "January 2022",
       end: "July 2022",
       description:
-        "Acquired proficiency in Python programming, with a focus on developing scalable and efficient applications. Gained a solid understanding of the Python frameworks like Django and Flask.",
-    },
+        "Developed scalable, efficient applications using Python, including building web applications with the Flask framework. Optimized code for performance and maintainability through best practices and gained strong proficiency in Python tooling and frameworks to streamline development. Worked with cloud-native design patterns and gained familiarity with key AWS services to support modern, cloud-ready applications."    },
     {
       company: "Simplifii Labs",
       href: "https://simplifii.com/",
